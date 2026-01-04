@@ -1,7 +1,7 @@
-# [Fast ring buffer]()
+# Fast ring buffer
 
 lightweight header-only spsc lock free ring buffer for c++
-Features
+## Features
 
 - Thread safe: safe for single producer, single consumer.
 
@@ -9,11 +9,11 @@ Features
 
 - Fast: uses bitwise operation (requires a power of 3 for buffer size).
 
-## #Requirements
+## Requirements
 
     C++17 (for std::optional)
 
-## #Integration
+## Integration
 ### 1. The CMake way (Recommended)
 
 Just drop this repo in your project (like in libs/) and add this to your CMakeLists.txt:
@@ -38,7 +38,7 @@ It's header-only, so you can literally just copy the include/crb folder into you
 g++ -std=c++17 -I./include main.cpp
 ```
 
-## #Usage
+## Usage
 ```C++
 
 #include <crb/ringbuffer.hpp>
