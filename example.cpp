@@ -24,11 +24,9 @@ int main () {
   std::shared_ptr<FastRB<int>> frb_ptr = std::make_shared<FastRB<int>>(size);
   std::cout << "Size of: " << sizeof(*frb_ptr) << "\n";
   std::thread t1(worker, frb_ptr);
-  // std::thread t2(worker, frb_ptr);
   std::thread t3(consumer, frb_ptr);
 
   t1.join();
-  // t2.join();
   t3.join();
 
   std::cout << "Size of: " << sizeof(*frb_ptr) << "\n";
