@@ -50,7 +50,7 @@ g++ -std=c++17 -I./include main.cpp
 
 int main() {
     // make buffer (size must be power of 2)
-    crb::FastRB<int> rb(1024);
+    FastRB<int> rb(1024);
 
     // producer
     std::thread producer([&]() {
