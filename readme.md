@@ -28,7 +28,10 @@ Link it
 target_link_libraries(your_app PRIVATE crb)
 
 ```
-Now you can just #include <crb/ringbuffer.hpp>
+Now you can just 
+```C++
+#include <crb/ringbuffer.hpp>
+```
 
 
 ### 2. The Manual way
