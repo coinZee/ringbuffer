@@ -1,4 +1,5 @@
 #include "crb/ringbuffer.hpp"
+#include <chrono>
 #include <iostream>
 #include <memory>
 #include <optional>
@@ -14,6 +15,7 @@ void consumer(std::shared_ptr<FastRB<int>> rb){
   for(int i = 0; i < 1024; ++i){
     std::optional<int> data = rb->pop();
     if (data) {
+      std::this_thread::sleep_for(std::chrono::seconds(5));
       std::cout << "consumed: " << *data << "\n";
     }
   }
