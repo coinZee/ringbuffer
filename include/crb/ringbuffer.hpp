@@ -12,7 +12,7 @@ public:
   std::vector<T> buffer; // 24 bytes
   size_t capacity; // 8 bytes
   size_t mask;  // 8 bytes
-                // 30 bytes!!
+                // 40 bytes!!
 
   char pad1[24]; 
   // padding 24 bytes to make it 64 bytes to fit in the first cache line 
