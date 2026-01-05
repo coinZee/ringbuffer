@@ -25,7 +25,7 @@ add_subdirectory(path/to/crb)
 ```
 Link it
 ```
-target_link_libraries(your_app PRIVATE crb)
+target_link_libraries(your_app PRIVATE crb::crb)
 
 ```
 Now you can just 
