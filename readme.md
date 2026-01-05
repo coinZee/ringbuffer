@@ -7,7 +7,7 @@ lightweight header-only spsc lock free ring buffer for c++
 
 - Lock free: uses std::atomic for low latency.
 
-- Fast: uses bitwise operation (requires a power of 3 for buffer size).
+- Fast: uses bitwise operation (requires a power of 2 for buffer size).
 
 ## Requirements
 
